@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dreamshare | Share your holiday dream</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- start login modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">Sign up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="InputEmail1">Email address</label>
+                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="InputPassword1">Password</label>
+                <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="InputPassword2">Confirm Password</label>
+                <input type="password" class="form-control" id="InputPassword2" placeholder="Confirm Password">
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Check1">
+                <label class="form-check-label" for="Check1">I Agree to the Term & Conditions</label>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Sign up</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end login modal -->
+
+    <!-- start signup modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Log in</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="InputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Log in</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end sign up modal -->
+
+    <!-- start main body -->
+    <div class="container-fluid no-gutters">
+      <!-- start header-main -->
+      <header class="header-main">
+        <!-- start header background image -->
+        <div class="header-bg-image">
+          <div class="container">
+            <!-- start navbar -->
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#"><h1 class="grow">dreamshare</h1></a>
+              <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="custom-toggler navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="nav-links" class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link grow" href="#partner-holiday">Activities<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link grow" href="#activiy-holiday">Partners</a></li>
+                  <li><a class="nav-link grow" href="#">Blog</a></li>
+                  <li><a class="nav-link grow" href="#contact">Contact</a></li>
+                  <li><a class="nav-link grow" data-toggle="modal" data-target="#loginModal" href="#">Log in</a></li>
+                  <li><a class="nav-link button grow" data-toggle="modal" data-target="#signupModal" href="#">Sign up</a></li>
+                </ul>
+              </div>
+            </nav>
+            <!-- end navbar -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="header-content-block">
+                  <div class="flex-item">
+                    <h1><span>SHARE YOUR</span>Holiday Dream</h1>
+                    <h2>And find the perfect partner to fulfill it</h2>
+                    <h5 class="button grow"><a href="#">Find your holiday partner</a></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end header background image -->
+      </header>
+      <!-- end header-main -->
+
+      <!-- start partner-holiday -->
+      <section id="partner-holiday" class="partner-holiday">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h3>Meet a partner for your best holiday</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="partner-image-block">
+                <img class="partner-image grow" src="assets/partner1.jpg" alt="">
+                <div class="partner-image-icon image-icon1">
+                  <img src="assets/music.svg" alt="">
+                </div>
+              </div>
+              <h6>Bradley Hunter</h6>
+              <p>Based in chichago. I love playing tennis and loud music.</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="partner-image-block">
+                <img class="partner-image grow" src="assets/partner2.jpg" alt="">
+                <div class="partner-image-icon image-icon2">
+                  <img src="assets/brush.svg" alt="">
+                </div>
+              </div>
+              <h6>Marie Bennett</h6>
+              <p>Currently living in colorado. Lover of art, languages and travelling.</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="partner-image-block">
+                <img class="partner-image grow" src="assets/partner3.jpg" alt="">
+                <div class="partner-image-icon image-icon3">
+                  <img src="assets/camera.svg" alt="">
+                </div>
+              </div>
+              <h6>Diana Wells</h6>
+              <p>Living in athens, greece. I love black and white classics, chillout music and green tea.</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="partner-image-block">
+                <img class="partner-image grow" src="assets/partner4.jpg" alt="">
+                <div class="partner-image-icon image-icon4">
+                  <img src="assets/airplane.svg" alt="">
+                </div>
+              </div>
+              <h6>Christopher Pierce</h6>
+              <p>Star Wars fanatic. I have a persistent enthusiasm to create new things.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <p class="button grow"><a href="#">See other partners</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end partner-holiday -->
+
+      <!-- start activity-holiday -->
+      <section id="activiy-holiday" class="activity-holiday">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-gutters">
+              <h3>Discover holiday activity ideas</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-gutters">
+              <div class="activity-holiday-block activity-holiday-block1">
+                <div class="image-overlay"></div>
+                <img class="activity-image img-fluid" src="assets/block1Sports.jpg" alt="">
+                <h3 class="activity-text">Sports</h3>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-gutters">
+              <div class="activity-holiday-block activity-holiday-block2">
+                <img class="activity-image img-fluid" src="assets/block2Wellness.jpg" alt="">
+                <h3 class="activity-text">Wellness and Health</h3>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-gutters">
+              <div class="activity-holiday-block activity-holiday-block3">
+                <img class="activity-image img-fluid" src="assets/block3Expeditions.jpg" alt="">
+                <h3 class="activity-text">Expeditions</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-gutters">
+              <div class="activity-holiday-block activity-holiday-block4">
+                <img class="activity-image img-fluid" src="assets/block4Games.jpg" alt="">
+                <h3 class="activity-text">Games</h3>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 no-gutters">
+              <div class="activity-holiday-block activity-holiday-block5">
+                <img class="activity-image img-fluid object-fit" src="assets/block5Culture.jpg" alt="">
+                <h3 class="activity-text">Culture and Education</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 no-gutters">
+              <div class="activity-holiday-block activity-holiday-block6">
+                <img class="activity-image img-fluid object-fit" src="assets/block6Beauty.jpg" alt="">
+                <h3 class="activity-text">Beauty and Relaxation</h3>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-gutters">
+              <div class="activity-holiday-block activity-holiday-block7">
+                <img class="activity-image img-fluid" src="assets/block7Travelling.jpg" alt="">
+                <h3 class="activity-text">Travelling</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end activity-holiday -->
+
+      <!-- start footer-main -->
+      <footer id="contact" class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="logo">
+                <h6><a href="#">DREAMSHARE</a></h6>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="company">
+                <ul>
+                  <li><h6>Company</h6></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">contact</a></li>
+                  <li><a href="#">press</a></li>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">terms and privacy</a></li>
+                  <li><a href="#">help</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="activities">
+                <ul>
+                  <li><h6>Activities</h6></li>
+                  <li><a href="#">sports</a></li>
+                  <li><a href="#">wellness and health</a></li>
+                  <li><a href="#">expeditions</a></li>
+                  <li><a href="#">games</a></li>
+                  <li><a href="#">culture and education</a></li>
+                  <li><a href="#">view all</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="contact-us">
+                <ul>
+                  <li><h6>Contact us</h6></li>
+                  <li><a href="tel:00000000000">Tel: (000) 000 0000</a></li>
+                  <li><a class="email" href="mailto:dreamshare@email.com">Email: dreamshare@email.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer-main -->
+    </div>
+    <!-- end main body -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <!-- end scripts -->
+  </body>
+</html>
